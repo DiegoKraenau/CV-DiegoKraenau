@@ -299,12 +299,16 @@ html{
 	}
 
 	.contenedor-redes p{
-		display: block;
+		display: none;
 	}
 
 	#que-esperas p{
 		margin-left: 35%;
 	} 
+
+	#numeroMovil{
+		display: block;
+	}
 
 	
 }
