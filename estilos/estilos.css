@@ -1,0 +1,310 @@
+body{
+	margin: 0;
+	font-family: 'Questrial', sans-serif ;
+	
+}
+
+header .contenedor{
+	display: flex;
+	justify-content: space-between;
+}
+
+header .lista-menu{
+	display: flex;
+}
+
+header ul li{
+	list-style: none;
+	margin-left: 15px;
+}
+
+ a{
+	text-decoration: none;
+
+}
+
+.contenedor{
+	max-width: 1280px;
+	width: 90%;
+	margin: auto;
+}
+
+header{
+	background: linear-gradient(rgba(229, 150, 133,.5),rgba(230, 238, 149 ,.5)),url(../imagenes/fondo.jpg);
+	height: 100vh;
+	background-size: cover;
+}
+
+#contenedor-titulo-flex{
+	display: flex;
+	justify-content: center;
+	margin-top: 15vh;
+	margin-left: 25vh;
+	margin-bottom: : 15vh;
+	margin-right: 25vh;
+	width: 100%;
+}
+
+h1{
+	font-size: 60px;
+	color: #fff;
+	margin: 0;
+}
+
+h2{
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+
+}
+
+.imgRedonda {
+    width:300px;
+    height:300px;
+    border-radius:150px;
+    margin: 15%;
+    margin-top: 0;
+}
+
+.contenedor-titulo{
+	text-align: center;
+}
+
+.contenedor-titulo a,#sobre-mi a{
+	font-size: 20px;
+	color:#fff;
+	background: #5cb8ff;
+	padding: 14px 24px;
+	width: 128px;
+	display: : inline-block;
+
+
+
+	
+}
+#sobre-mi a{
+	margin-top: 30%;
+}
+
+p.logo{
+	color: #fff;
+	font-size: 20px;
+}
+
+nav ul li a{
+	color:#fff;
+}
+
+h3{
+	text-align: center;
+	font-size: 55px;
+	font-weight: normal;
+}
+h5{
+	text-align: center;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+#sobre-mi .contenedor-sobremi{
+	display: flex;
+	justify-content: space-around;
+
+}
+
+#sobre-mi .texto{
+	width: 42%;
+
+}
+
+.contenedor-conocimientos{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	
+}
+
+.conocimiento{
+	width: 25%;
+	padding: 25px 20px 25px 20px;
+	background: linear-gradient(to top,#40a8f9,#5cb8ff);
+	border-radius:10px;
+	position: relative;
+	-webkit-box-shadow: 2px 15px 30px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 15px 30px 0px rgba(0,0,0,0.75);
+	box-shadow: 2px 15px 30px 0px rgba(0,0,0,0.75);
+}
+
+.conocimiento h4{
+	font-size: 30px;
+	margin: 0;
+}
+
+.parrafos{
+	margin-bottom: 20px;
+	height: 200px;
+}
+
+.icono{
+	float: right;
+}
+
+
+.texto p{
+	margin-bottom: 10%;
+}
+
+.texto{
+	margin:3%;
+}
+
+.parrafos{
+	height: 200px;
+}
+
+button.owl-prev, button.owl-next{
+	font-size: 40px !important;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.contenedor-redes{
+	display: flex;
+	justify-content: space-around;
+}
+
+.fa-whatsapp {
+  background: #a4c639;
+  color: white;
+}
+
+.contenedor-redes p{
+	margin-left: -23%;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+#sobre-mi, #que-esperas,#mis-trabajos{
+	padding: 90px 0;
+}
+
+.menu-icon{
+	display: none;
+}
+
+#numeroMovil{
+	display: none;
+}
+
+
+@media(max-width: 800px){
+	header{
+		height: 100vh;
+	}
+
+	.menu-icon{
+		display:block;
+		width: 40px;
+		height: 40px;
+		margin-top: 10px;
+	}
+
+	header nav{
+		position: absolute;
+		top: 83px;
+		left: 0;
+		height: 285px;
+		background: #5cb8ff;
+		width: 100%;
+		display: none;
+	}
+
+	header nav ul{
+		flex-direction: column;
+	}
+
+	header nav ul li{
+		margin-bottom: 90px;
+	}
+
+	h1{
+		font-size: 30px;
+		margin-left: 10vh;
+	}
+	h2{
+		font-size: 15px;
+		margin-left: 10vh;
+	}
+	h3{
+		font-size: 50px;
+	}
+	.contenedor-titulo {
+    text-align: center;
+    margin-right: 60vh;
+	}
+
+	.contenedor-titulo a{
+		margin-left: 10vh;
+	}
+	.contenedor-sobremi{
+		flex-direction: column;
+	}
+
+	#sobre-mi img{
+		width: 100%;
+	}
+
+	#sobre-mi .texto{
+		width: 100%;
+	}
+
+	#sobre-mi a{
+		margin-left: 8vh;
+	}
+
+	.contenedor-conocimientos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+	}
+
+	.conocimiento{
+		width: 82%;
+		margin-bottom: 5vh;
+		margin-left: 1.5vh;
+	}
+
+	.contenedor-redes p{
+		display: none;
+	}
+
+	#que-esperas p{
+		margin-left: 35%;
+	} 
+
+	
+}

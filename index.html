@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+	<meta charset="utf-8">
+	<title>CV-DiegoKraenau</title>
+	<link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="owl/owl.carousel.min.css">
+	<link rel="stylesheet" href="owl/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+</head>
+<body>
+	<header>
+		<div class="menu">
+			<div class="contenedor">
+				<p class="logo">Diego Kraenau</p>
+				<img class="menu-icon" src="imagenes/menu.png">
+				<nav>
+					<ul class="lista-menu">
+						<li><a href="#sobre-mi">Sobre mí</a></li>
+						<li><a href="#mis-trabajos">Mis trabajos</a></li>
+						<li><a href="#que-esperas">Contactame</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<div class="contenedor" id="contenedor-titulo-flex">
+			<div class="contenedor-titulo">
+				<h1>Diego Kraenau</h1>
+				<h2>Estudiante de ingenieria de Software</h2>
+				<img src='imagenes/foto.jpg' class='imgRedonda' />
+				<a href="#sobre-mi">Sobre mí</a>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		
+		<section id="sobre-mi">
+			<div class="contenedor">
+				<h3>Sobre mí</h3>		
+				<div class="contenedor-sobremi">
+					<div class="computadoras">
+						<img src="imagenes/logoUpc.png">
+					</div>
+					<div class="texto">
+						<p>Me considero una persona extremadamente puntual y honesta al nivel laboral, 
+						adicionando que poseo grandes técnicas para el trabajo en equipo y la 
+						complementación con diversos compañeros</p>
+
+						<a href="#mis-trabajos">Ver mis trabajos</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="conocimientos">
+			<div class="contenedor">
+				<h3>Conocimientos</h3>
+				<h5>A continuación unas de las cuantas especializaciones</h5>
+				<div class="contenedor-conocimientos">
+					<div class="conocimiento ">
+						<h4>Frameworks</h4>
+						<div class="parrafos">
+							<p>Para el diseño de paginas web atracticas y funcionales se posee el conocimiento de los siguientes frameworks</p>
+							<p>VueJs : Intermedio</p>
+							<p>.Net : Intermedio</p>
+							<p>Angular : Intermedio</p>
+						</div>
+						<img src="imagenes/monitor.png" class="icono">
+		
+					</div>
+					<div class="conocimiento ">
+						<h4>Lenguajes de Programación</h4>
+						<div class="parrafos">
+							<p>Se domina los siguientes lenguajes segun su nivel</p>
+							<p>Java: Intermedio</p>
+							<p>C#:Intermedio</p>
+							<p>C++:Avanzado</p>
+							<p>Asp.net :Intermedio</p>
+							<p>Entre otros lenguajes entre SQL, etc.</p>
+					    </div>
+						<img src="imagenes/seo.png" class="icono">
+			
+					</div>
+					<div class="conocimiento ">
+						<h4>Desarollo Movil</h4>
+						<div class="parrafos">
+							<p>Se posee conocimientos de los siguientes lenguajes para desarrollo movil:</p>
+							<p>Kotlin: Intermedio</p>
+						</div>
+						<img src="imagenes/mobile.png" class="icono">
+						
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="mis-trabajos">
+			<div class="contenedor">
+				<h3>Mis Trabajos</h3>
+				<div class="owl-carousel owl-theme">
+    			<div class="item"><h5>Nootas</h5><img  src="imagenes/logo.png" ></div>
+   				<div class="item"><h5>RapiSolver</h5><img  src="imagenes/rapisolver.png" ></div>
+				</div>
+			</div>
+			
+		</section>
+
+		<section id="que-esperas">
+			<div class="contenedor">
+				<h3>¿Deseas comunicarte conmigo?</h3>
+				<div class="contenedor-redes">
+					<a href="https://www.facebook.com/diego.kraenaurodrigues.3" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-whatsapp"></a>
+					<p>+51 958480647</p>
+					<a href="https://www.linkedin.com/in/diegokraenau/" class="fa fa-linkedin"></a>
+				</div>	
+
+			</div>
+			<p id="numeroMovil">+51 958480647</p>
+		</section>
+
+	</main>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="owl/owl.carousel.min.js"></script>
+<script >
+	$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:2
+        }
+    }
+})
+</script>
+<script >
+	$(document).ready(function(){
+		$(window).scroll(function(){
+			scroll=$(window).scrollTop();
+			if(scroll>100){
+				$('.menu').css({"position":"fixed"});
+				$('.menu').css({"width":"100%"});
+				$('.menu').css({"top":"0"});
+				$('.menu').css({"background":"#fff"});
+				$('.menu a').css({"color":"#000"});
+				$('.logo').css({"color":"#000"});
+				$('.menu').css({"box-shadow":"rgba(0,0,0,0.22) 6px 1px 1px"});
+				$('.menu').css({"z-index":"100"});
+			}else{
+				$('.menu').css({"position":"relative"});
+				$('.menu').css({"background":"transparent"});
+				$('.menu').css({"box-shadow":"0 0 0"});
+				$('.menu a').css({"color":"#fff"});
+				$('.logo').css({"color":"#fff"});
+			}
+		})
+
+		$('.menu-icon').click(function(){
+			$('header nav').slideToggle();
+		})
+
+	})
+</script>
+</body>
+</html>
