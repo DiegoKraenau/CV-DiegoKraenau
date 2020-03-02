@@ -299,7 +299,7 @@ html{
 	}
 
 	.contenedor-redes p{
-		display: none;
+		display: block;
 	}
 
 	#que-esperas p{
